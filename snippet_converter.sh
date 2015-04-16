@@ -1,9 +1,10 @@
 #!/bin/bash
 
-#converts autokey files to aText-compatible CSV output
+#converts snippets from one program's format to another's
 
 convert_autokey_to_atext() {
-# currently can convert only text files, not scripts
+# converts autokey files to aText-compatible CSV output
+# currently can convert only autokey text files, not autokey scripts
    outfile=~/Desktop/do.csv
    for i in ~/.config/autokey/data/do/*txt; do
       dir="$(dirname "$i")";
